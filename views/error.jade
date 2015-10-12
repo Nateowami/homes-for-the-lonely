@@ -1,0 +1,10 @@
+extends layout
+
+prepend head
+  title Error #{code}
+
+block content
+  h1=code
+  p=explanation
+  if(process.env.NODE_ENV !== "production" && error)
+    code=error.stack
