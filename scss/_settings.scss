@@ -1415,19 +1415,27 @@ $topbar-bg: transparent;
 $topbar-title-font-size: 16pt;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
-// $topbar-link-color-hover: $white;
-// $topbar-link-color-active: $white;
-// $topbar-link-color-active-hover: $white;
-// $topbar-link-weight: $font-weight-normal;
-$topbar-link-font-size: 16pt;
+$topbar-link-color: black;
+$topbar-link-color-hover: black;
+$topbar-link-color-active: black;
+$topbar-link-color-active-hover: black;
+$topbar-link-weight: bold;
+$topbar-link-font-size: 28pt;
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: transparent;
 $topbar-link-bg-hover: transparent;
 $topbar-link-bg-color-hover: transparent;
 $topbar-link-bg-active: transparent;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
-// $topbar-link-font-family: $body-font-family;
+
+@font-face {
+    font-family: 'Billy';
+    src: url('/fonts/billy.eot'), url('/fonts/billy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$topbar-link-font-family: Billy;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);
 // $topbar-back-link-size: rem-calc(18);
@@ -1457,7 +1465,7 @@ $topbar-dropdown-bg: transparent;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
 // $topbar-menu-link-color: $white;
-// $topbar-menu-icon-color: $white;
+$topbar-menu-icon-color: black;
 // $topbar-menu-link-color-toggled: $jumbo;
 // $topbar-menu-icon-color-toggled: $jumbo;
 //$topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon

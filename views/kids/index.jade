@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  ul.name_cards.small-block-grid-1.medium-block-grid-2
+    for kid in kids
+      li
+        .name_card
+          a(href="/kids/" + kid.name)
+            img(src="/img/kids/" + kid.name.toLowerCase() + ".jpg", alt=kid.name)
+            div
+              span.name=kid.name
+              span.age Age: #{moment().from(kid.dob, true)}
+              span.special_needs Special needs: #{kid.special_needs}
+              span.status= kid.status || ""

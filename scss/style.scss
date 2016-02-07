@@ -1,8 +1,35 @@
+@font-face {
+    font-family: 'Billy';
+    src: url('/fonts/billy.eot'), url('/fonts/billy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-  background-color: #303030;
-  color: #f0f0f0;
   font-family: Sans-Serif;
   padding: 5pt;
+}
+
+/* nav links */
+
+.link_home {
+  color: /*maroon*/ rgb(131, 68, 35) !important;
+}
+
+.link_kids {
+  color: /*#F092C8*/ rgb(241, 158, 191) !important;
+}
+
+.link_adopt {
+  color: /*#F0E726*/ rgb(233, 224, 47) !important;
+}
+
+.link_help_someone_adopt {
+  color: /*#33f*/ rgb(56, 96, 174) !important;
+}
+
+.link_contact {
+  color: /*#E3491E*/ rgb(230, 77, 51) !important;
 }
 
 /* main elements */
@@ -12,7 +39,7 @@ body {
 }
 
 h1 {
-  color: white;
+
 }
 
 img.logo {
@@ -31,10 +58,9 @@ img.banner {
 }
 
 .content {
-  max-width: 800px;
+  max-width: 700pt;
   border-radius: 3pt;
   margin: 0 auto;
-  color: white;
   padding: 5pt;
 }
 
@@ -73,7 +99,10 @@ nav.expanded section.top-bar-section {
   width: 100%;
 }
 nav.top-bar.expanded {
-  height: 150pt;
+  height: 190pt;
+}
+nav.top-bar.expanded li {
+  height: 30pt;
 }
 
 nav a:hover {
@@ -88,3 +117,62 @@ nav a:hover {
 .orbit-timer {
   display: none;
 }
+
+/* name cards */
+
+ul.name_cards {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.name_cards li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li div.name_card {
+  margin: 5pt;
+  padding: 5pt;
+  overflow: auto;
+  border-bottom: 1pt solid gray;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.75);
+  border-radius: 3pt;
+}
+
+.name_card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.name_card img {
+  width: 100pt;
+  height: 100pt;
+  margin-right: 10pt;
+  margin-bottom: 10pt;
+  display: inline-block;
+  float: left;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 15px 3px #D4D4D4;
+  -moz-box-shadow: 3px 3px 15px 3px #D4D4D4;
+  box-shadow: 3px 3px 15px 3px #D4D4D4;
+}
+
+.name_card .card_info  {
+  display: inline-block;
+}
+
+.name_card span.name {
+  font-size: 36pt;
+  font-family: Billy;
+  margin-bottom: -18pt;
+  margin-top: -25pt;
+}
+
+.name_card span {
+  display: block;
+}
+
