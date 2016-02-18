@@ -34,7 +34,7 @@ body {
 
 /* main elements */
 
-.header div {
+nav div {
   text-align: center;
 }
 
@@ -64,7 +64,7 @@ img.banner {
   padding: 5pt;
 }
 
-.content div {
+.content p, .content ul.name_cards div {
   margin: 10pt;
 }
 
@@ -148,7 +148,7 @@ li div.name_card {
   color: inherit;
 }
 
-.name_card img {
+.name_card img, .kid_info img {
   width: 100pt;
   height: 100pt;
   margin-right: 10pt;
@@ -172,7 +172,19 @@ li div.name_card {
   margin-top: -25pt;
 }
 
-.name_card span {
+.name_card span, .kid_info span {
   display: block;
 }
 
+/* styling for individual child pages */
+
+
+.kid_info h1 {
+  font-family: Billy;
+  font-size: 42pt;
+  margin-bottom: -15pt;
+}
+
+.kid_info div {
+  float: left;
+}

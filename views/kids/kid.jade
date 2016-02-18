@@ -1,4 +1,12 @@
 extends ../layout
 
 block content
-  img(src="/img/kids/" + kid.name.toLowerCase() + ".jpg", alt=kid.name)
+  article.kid_info
+    img(src="/img/kids/" + kid.name.toLowerCase() + ".jpg", alt=kid.name)
+    h1=kid.name
+    
+    span.age Age: #{moment().from(kid.dob, true)}
+    span.special_needs Special needs: #{kid.special_needs}
+    span.status= kid.status || ""
+    
+    div=kid.text
