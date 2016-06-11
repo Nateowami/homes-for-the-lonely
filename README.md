@@ -1,6 +1,8 @@
 Homes for the Lonely
 ====================
 
+#### On hold indefinitely due to regulations.
+
 This is a website for a particular adoption advocacy group, pushed to GitHub to keep things simple. Contributions aren't exactly expected, but they're certainly welcome.
 
 Running the web server
